@@ -1,5 +1,9 @@
+body {
+  overflow-x: hidden;
+}
 .second-color {
-  background-color: transparent !important;
+  background-color: white !important;
+  z-index: 100;
 }
 
 .logo-pct {
@@ -13,5 +17,7 @@ nav ul a {
 
 .main-content {
   width: 100%;
-  padding: 20px;
+ 
+  max-width: 100%;
+  
 }

@@ -45,18 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
   if (page == "") {
     page = "home";
   }
-  if (page == 'teams') {
-    document.getElementById('body-content').style.visibility = 'hidden';
-  }
+  
   console.log("hot", page)
   loadPage(page);
 
   function loadPage(page) {
-    if (page == 'teams') {
-      document.getElementById('body-content').style.visibility = 'hidden';
-      getAllTeam();
-    }
-    else if (page == 'saved'){
+    // if (page == 'menu') {
+    //   initCarousel();
+    // }
+     if (page == 'saved'){
       document.getElementById('body-content').style.visibility = 'hidden';
       getSavedTeams()
     }
@@ -75,6 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     };
     xhttp.open("GET", "pages/" + page + ".html", true);
+    
     xhttp.send();
+    
   }
 });
