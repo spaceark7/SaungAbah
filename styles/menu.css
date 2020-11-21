@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Engagement&family=Lato&display=swap');
 
+.fs {
+    margin: 0;
+}
 .menu-container {
     max-width: 100%;
     width: 100%;
@@ -59,7 +62,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
     padding: 20px;
     
 }
@@ -80,6 +83,10 @@
     font-size: 1.2em;
     margin: 0;
 }
+
+.breakline {
+    width: 50%;
+}
 .bottom-fs .menu-utama img {
     width: 100%;
     position: relative;
@@ -94,6 +101,24 @@
     font-family: 'Engagement', cursive;
     color: white;
     position: relative;
-    bottom: -100;
-    left: 40;
+    bottom: -200;
+    text-align: center;
+}
+
+.minuman-pilihan-title {
+    font-family: 'Engagement', cursive;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+.minuman-utama {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.bottom-fs .minuman-utama img {
+    width: 100%;
+    position: relative;
+    transition: 0.5s;
 }
