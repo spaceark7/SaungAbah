@@ -6,14 +6,14 @@ else
   console.log(`Workbox gagal dimuat`);
 
   workbox.precaching.precacheAndRoute([
-      {url: '/index.html', revision: '2'},
+      {url: '/index.html', revision: '3'},
       {url: '/nav.html', revision: '1'},
       {url: '/manifest.json', revision: '1'},
       {url: '/logo144.png', revision: '1'},
       {url: '/logo192.png', revision: '1'},
       {url: '/logo256.png', revision: '1'},
       {url: '/logo512.png', revision: '1'},
-      {url: '/index.css', revision: '1'},
+      {url: '/index.css', revision: '2'},
   ])
 
   workbox.routing.registerRoute(
@@ -41,3 +41,10 @@ workbox.routing.registerRoute(
         cacheName: 'assets'
     })
 );
+
+workbox.routing.registerRoute(
+    /^https:\/\/fonts\.googleapis\.com/,
+    workbox.strategies.staleWhileRevalidate({
+      cacheName: 'google-fonts-stylesheets',
+    })
+  );
