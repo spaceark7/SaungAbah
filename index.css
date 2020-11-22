@@ -1,6 +1,9 @@
 body {
   overflow-x: hidden;
 }
+.material-icons {
+  color: #3b2314;
+}
 .second-color {
   background-color: white !important;
   z-index: 100;
@@ -15,9 +18,37 @@ nav ul a {
   color: #3b2314;
 }
 
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 .main-content {
   width: 100%;
- 
+
   max-width: 100%;
-  
+}
+
+@media (max-width: 768px) {
+  .brand-logo {
+    height: 100%;
+    justify-content: center;
+    display: flex !important;
+  }
+  .logo-pct {
+    width: 20%;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo-pct {
+    width: 30%;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-pct {
+    width: 40%;
+  }
 }

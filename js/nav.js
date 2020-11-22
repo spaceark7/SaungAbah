@@ -53,10 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // if (page == 'menu') {
     //   initCarousel();
     // }
-     if (page == 'saved'){
-      document.getElementById('body-content').style.visibility = 'hidden';
-      getSavedTeams()
-    }
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4) {
